@@ -22,3 +22,7 @@ Route::get('/ola', function(){
 
 Route::get('/cursos', 'CursosController@index');
 Route::get('/cursos/{index}','CursosController@show');
+
+
+Route::get('/editoras', 'EditoraController@index');
+Route::get('/editoras/{index}','EditoraController@show');
