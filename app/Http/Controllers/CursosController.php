@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
+
 class CursosController extends Controller
 {
   public function index()
@@ -14,9 +16,15 @@ class CursosController extends Controller
     );
     return view('cursos.index', compact('cursos'));
 
+
+
+
+
+
     }
   public function show($index) {
       $curso = $this->cursos[$index];
+    //  $curso = $cursos[$index];
       return view('cursos.show', compact('curso'));
     }
 
